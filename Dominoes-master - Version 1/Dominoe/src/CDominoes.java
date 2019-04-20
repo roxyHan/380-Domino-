@@ -12,14 +12,14 @@ import java.util.Collections;
  *
  * @author Hanifa
  */
-public class DominoSet {
+public class CDominoes {
 
     private ArrayList<Domino> dominoes_pile = new ArrayList<>();
     
     /**
      * Constructor for the boneyard
      */
-    public DominoSet() {
+    public CDominoes() {
         this.dominoes_pile = fillPile(dominoes_pile) ;
     }
 
@@ -51,7 +51,7 @@ public class DominoSet {
      *
      * @return a domino given left and right metrics 
      */    
-    public Domino iDraw() {
+    public Domino draw() {
         Collections.shuffle(dominoes_pile);
         Domino aDomino = dominoes_pile.get(0);
         dominoes_pile.remove(aDomino);

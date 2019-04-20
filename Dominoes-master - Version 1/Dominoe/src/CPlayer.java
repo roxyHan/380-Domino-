@@ -3,17 +3,18 @@
 
 import java.util.*;
 
-public class Player {
+public class CPlayer {
 
     //elements
         //Dev note: Integer will be replaced with dominoe once dominoe object is amde
     ArrayList<Integer> hand = new ArrayList<Integer>();
 
     //constructor
-    Player() {
-    }
+    //Player() {
+    //}
 
     //methods
+    //pick dominoe
     public void showHand() {
         System.out.println(hand);
     }      
