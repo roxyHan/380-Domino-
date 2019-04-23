@@ -3,13 +3,13 @@
 
 /**
  *
- * @author Hanifa
+ * @author Hanifa Barry
+ * @date   04/16/2019
  * 
  */
 public class Domino {
     
     private int left, right;
-    private boolean isFlipped;
     
     /**
      * Builds a domino object
@@ -37,8 +37,19 @@ public class Domino {
     }
     
     /**
+     * 
+     * @param aDomino
+     * @return Domino   flippedDomino
+     */
+    public Domino flipDomino() {
+        Domino flippedDomino = new Domino(this.right, this.left);
+        return flippedDomino;
+    }
+    
+    /**
      * Displays information about the piece of domino
      * 
+     * @return String   information about the domino
      */
     public String toString() {
         String display = "";

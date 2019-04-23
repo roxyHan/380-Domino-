@@ -10,7 +10,9 @@ import java.util.Collections;
 
 /**
  *
- * @author Hanifa
+ * @author Hanifa Barry
+ * @date    04/16/2019
+ * 
  */
 public class CDominoes {
 
@@ -57,7 +59,6 @@ public class CDominoes {
         dominoes_pile.remove(aDomino);
         return aDomino;       
     }
-    
     
     
     /**
